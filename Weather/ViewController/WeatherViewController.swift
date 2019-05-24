@@ -30,12 +30,12 @@ class WeatherViewController: UIViewController {
         locMng.startUpdatingLocation()
         
         self.title = "Weather"
+        
+        loadWeather()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        loadWeather()
     }
     
     // MARK: - Navigation
